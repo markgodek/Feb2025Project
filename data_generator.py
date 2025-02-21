@@ -1,7 +1,7 @@
 # random image generation attribution
 # https://stackoverflow.com/questions/15261851/100x100-image-with-random-pixel-colour
 
-import string, numpy, random, os
+import string, numpy, random, time, os
 from datetime import datetime
 from PIL import Image
 
@@ -29,4 +29,10 @@ def generate_data(cell_line, perturbation):
 
     return entry
 
-generate_data(1,2)
+while True:
+    cell_line_count = 3 #number of cell lines to simulate
+    perturbation_count = 3 #number of perturbations to simulate
+    for cell_line in range(1,cell_line_count+1):
+        for perturbation in range(1, perturbation_count+1):
+            generate_data(cell_line,perturbation)
+            time.sleep(15)
