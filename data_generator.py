@@ -1,3 +1,5 @@
+##TODO find a way to download thingsboard settings
+
 # random image generation attribution
 # https://stackoverflow.com/questions/15261851/100x100-image-with-random-pixel-colour
 
