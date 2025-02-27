@@ -8,7 +8,8 @@ ACCESS_TOKEN = 'DHT11_DEMO_TOKEN'
 
 # Data capture and upload interval in seconds.
 
-sensor_data = {'temperature': 0}
+#sensor_data = {'temperature': 0}
+data = {''}
 
 client = mqtt.Client()
 # Set access token

@@ -1,0 +1,6 @@
+1740160149: mosquitto version 2.0.20 starting
+1740160149: Config loaded from /mosquitto/config/mosquitto.conf.
+1740160149: Opening ipv4 listen socket on port 1883.
+1740160149: Opening ipv6 listen socket on port 1883.
+1740160149: mosquitto version 2.0.20 running
+1740162019: mosquitto version 2.0.20 terminating

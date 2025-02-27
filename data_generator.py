@@ -1,4 +1,5 @@
-##TODO find a way to download thingsboard settings
+##TODO export Device JSON from home PC for ThingsBoard
+##TODO make docker include root chain rule when container is created
 
 # random image generation attribution
 # https://stackoverflow.com/questions/15261851/100x100-image-with-random-pixel-colour
@@ -10,7 +11,8 @@ from PIL import Image
 
 PORT = 9883
 THINGSBOARD_HOST = 'localhost'
-ACCESS_TOKEN = 'p5QFeCX5QoLshnYM2aL7'
+ACCESS_TOKEN = 'p5QFeCX5QoLshnYM2aL7' #device for home
+ACCESS_TOKEN = 'LQFN5wQD8olOYQykhsAV' #device for laptop
 
 # a method which given numbers for a cell line and perturbation, returns a database entry
 def generate_data(cell_line, perturbation):
