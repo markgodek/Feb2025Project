@@ -1,7 +1,9 @@
+version: '3.7'
+
 services:
   mytb:
+    build: .  # Build the image using the Dockerfile in the current directory
     restart: always
-    image: "thingsboard/tb-postgres"
     ports:
       - "8080:9090"
       - "9883:1883"
@@ -9,5 +11,24 @@ services:
     environment:
       TB_QUEUE_TYPE: in-memory
     volumes:
-      - ~/.mytb-data:/data
-      - ~/.mytb-logs:/var/log/thingsboard
+      - ./mytb-data:/data
+      - ./mytb-logs:/var/log/thingsboard
+      - ./culture_imager_rule_chain.json:/etc/thingsboard/culture_imager_rule_chain.json
+      - ./cell_imager_device.json:/etc/thingsboard/cell_imager_device.json
+    entrypoint: >
+      /bin/bash -c "
+      export TB_ACCESS_TOKEN=\$(curl -X POST http://localhost:8080/api/auth/login \
+        -H 'Content-Type: application/json' \
+        -d '{\"username\": \"tenant@thingsboard.org\", \"password\": \"tenant\"}' | jq -r .token) &&
+      /usr/bin/java -Duser.home=/etc/thingsboard -jar /usr/share/thingsboard/bin/thingsboard.jar & 
+      sleep 20 && 
+      curl -X POST -d @/etc/thingsboard/culture_imager_rule_chain.json \
+        -H 'Content-Type: application/json' \
+        -H 'Authorization: Bearer \$TB_ACCESS_TOKEN' \
+        http://localhost:8080/api/ruleChains/ && 
+      curl -X POST -d @/etc/thingsboard/cell_imager_device.json \
+        -H 'Content-Type: application/json' \
+        -H 'Authorization: Bearer \$TB_ACCESS_TOKEN' \
+        http://localhost:8080/api/device/ && 
+      tail -f /dev/null
+      "
