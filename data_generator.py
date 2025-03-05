@@ -11,8 +11,7 @@ from PIL import Image
 
 PORT = 9883
 THINGSBOARD_HOST = 'localhost'
-ACCESS_TOKEN = 'p5QFeCX5QoLshnYM2aL7' #device for home
-ACCESS_TOKEN = 'LQFN5wQD8olOYQykhsAV' #device for laptop
+ACCESS_TOKEN = 'zJ0UL4UqryJqYn1MZEXq'
 
 # a method which given numbers for a cell line and perturbation, returns a database entry
 def generate_data(cell_line, perturbation):
