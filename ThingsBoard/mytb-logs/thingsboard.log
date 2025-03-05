@@ -1352,3 +1352,33 @@
 2025-03-05 20:04:42,108 [sql-log-1-thread-1] INFO  o.t.s.dao.sql.TbSqlBlockingQueue - Queue-1 [TS] queueSize [0] totalAdded [12] totalSaved [12] totalFailed [0]
 2025-03-05 20:04:42,133 [sql-log-1-thread-1] INFO  o.t.s.dao.sql.TbSqlBlockingQueue - Queue-0 [TS Latest] queueSize [0] totalAdded [12] totalSaved [12] totalFailed [0]
 2025-03-05 20:04:42,134 [sql-log-1-thread-1] INFO  o.t.s.dao.sql.TbSqlBlockingQueue - Queue-1 [TS Latest] queueSize [0] totalAdded [12] totalSaved [12] totalFailed [0]
+2025-03-05 20:04:52,107 [sql-log-1-thread-1] INFO  o.t.s.dao.sql.TbSqlBlockingQueue - Queue-0 [TS] queueSize [0] totalAdded [2] totalSaved [2] totalFailed [0]
+2025-03-05 20:04:52,108 [sql-log-1-thread-1] INFO  o.t.s.dao.sql.TbSqlBlockingQueue - Queue-1 [TS] queueSize [0] totalAdded [2] totalSaved [2] totalFailed [0]
+2025-03-05 20:04:52,133 [sql-log-1-thread-1] INFO  o.t.s.dao.sql.TbSqlBlockingQueue - Queue-0 [TS Latest] queueSize [0] totalAdded [2] totalSaved [2] totalFailed [0]
+2025-03-05 20:04:52,134 [sql-log-1-thread-1] INFO  o.t.s.dao.sql.TbSqlBlockingQueue - Queue-1 [TS Latest] queueSize [0] totalAdded [2] totalSaved [2] totalFailed [0]
+2025-03-05 20:05:10,560 [TB-Scheduling-5] INFO  o.t.s.dao.aspect.SqlDaoCallsAspect - Total timing statistics below:
+2025-03-05 20:05:10,562 [TB-Scheduling-5] INFO  o.t.s.dao.aspect.SqlDaoCallsAspect - [56c871f0-f9f7-11ef-a087-d5dfd40a9d59]: calls: 52, failures: 0, exec time: 2096 
+2025-03-05 20:05:10,563 [TB-Scheduling-5] INFO  o.t.s.dao.aspect.SqlDaoCallsAspect - [56c871f0-f9f7-11ef-a087-d5dfd40a9d59] Top 3 methods by timing:
+2025-03-05 20:05:10,563 [TB-Scheduling-5] INFO  o.t.s.dao.aspect.SqlDaoCallsAspect - [56c871f0-f9f7-11ef-a087-d5dfd40a9d59]: method: JpaAbstractDao.findById(..), calls: 24, failures: 0, exec time: 764
+2025-03-05 20:05:10,564 [TB-Scheduling-5] INFO  o.t.s.dao.aspect.SqlDaoCallsAspect - [56c871f0-f9f7-11ef-a087-d5dfd40a9d59]: method: JpaApiUsageStateDao.findApiUsageStateByEntityId(..), calls: 2, failures: 0, exec time: 383
+2025-03-05 20:05:10,564 [TB-Scheduling-5] INFO  o.t.s.dao.aspect.SqlDaoCallsAspect - [56c871f0-f9f7-11ef-a087-d5dfd40a9d59]: method: JpaAlarmDao.findLatestActiveByOriginatorAndType(..), calls: 3, failures: 0, exec time: 222
+2025-03-05 20:05:10,568 [TB-Scheduling-4] INFO  o.t.s.s.queue.EdgeConsumerStats - Edge Stats: totalMsgs = [1] edgeNfs = [1] coreNfEdgeHPUpd = [0] coreNfEdgeUpd = [0] coreNfEdgeSyncReq = [0] coreNfEdgeSyncResp = [0] coreNfEdgeCompLfcl = [0] 
+2025-03-05 20:05:10,568 [TB-Scheduling-8] INFO  o.t.s.s.queue.TbCoreConsumerStats - Core Stats: totalMsgs = [9] sessionEvents = [4] getAttr = [0] subToAttr = [0] subToRpc = [0] toDevRpc = [0] subInfo = [4] claimDevice = [0] deviceState = [0] subMsgs = [0] deviceConnect = [0] deviceActivity = [0] deviceDisconnect = [0] deviceInactivity = [0] coreNfOther = [1] coreNfCompLfcl = [0] coreNfDevRpcRsp = [0] coreNfNfRlProc = [0] coreNfQueueUpd = [0] coreNfQueueDel = [0] coreNfSubSvc = [0] coreNfSubMgr = [0] coreNfVCRsp = [0] 
+2025-03-05 20:05:10,569 [TB-Scheduling-3] INFO  o.t.s.c.t.s.DefaultTransportService - Transport Stats: openConnections [0]
+2025-03-05 20:05:10,569 [TB-Scheduling-2] INFO  o.t.s.s.q.TbRuleEngineConsumerStats - [Main] Stats: totalMsgs = [15] successfulMsgs = [7] timeoutMsgs = [0] failedMsgs = [8] tmpTimeout = [0] tmpFailed = [0] successfulIterations = [3] failedIterations = [7] 
+2025-03-05 20:05:12,105 [sql-log-1-thread-1] INFO  o.t.s.dao.sql.TbSqlBlockingQueue - Queue-1 [TS] queueSize [0] totalAdded [7] totalSaved [7] totalFailed [0]
+2025-03-05 20:05:12,131 [sql-log-1-thread-1] INFO  o.t.s.dao.sql.TbSqlBlockingQueue - Queue-1 [TS Latest] queueSize [0] totalAdded [7] totalSaved [7] totalFailed [0]
+2025-03-05 20:05:22,105 [sql-log-1-thread-1] INFO  o.t.s.dao.sql.TbSqlBlockingQueue - Queue-0 [TS] queueSize [0] totalAdded [9] totalSaved [9] totalFailed [0]
+2025-03-05 20:05:22,106 [sql-log-1-thread-1] INFO  o.t.s.dao.sql.TbSqlBlockingQueue - Queue-1 [TS] queueSize [0] totalAdded [2] totalSaved [2] totalFailed [0]
+2025-03-05 20:05:22,131 [sql-log-1-thread-1] INFO  o.t.s.dao.sql.TbSqlBlockingQueue - Queue-0 [TS Latest] queueSize [0] totalAdded [9] totalSaved [9] totalFailed [0]
+2025-03-05 20:05:22,132 [sql-log-1-thread-1] INFO  o.t.s.dao.sql.TbSqlBlockingQueue - Queue-1 [TS Latest] queueSize [0] totalAdded [2] totalSaved [2] totalFailed [0]
+2025-03-05 20:06:10,562 [TB-Scheduling-6] INFO  o.t.s.dao.aspect.SqlDaoCallsAspect - Total timing statistics below:
+2025-03-05 20:06:10,564 [TB-Scheduling-6] INFO  o.t.s.dao.aspect.SqlDaoCallsAspect - [56c871f0-f9f7-11ef-a087-d5dfd40a9d59]: calls: 2, failures: 0, exec time: 22 
+2025-03-05 20:06:10,565 [TB-Scheduling-6] INFO  o.t.s.dao.aspect.SqlDaoCallsAspect - [56c871f0-f9f7-11ef-a087-d5dfd40a9d59] Top 3 methods by timing:
+2025-03-05 20:06:10,566 [TB-Scheduling-6] INFO  o.t.s.dao.aspect.SqlDaoCallsAspect - [56c871f0-f9f7-11ef-a087-d5dfd40a9d59]: method: JpaQueueStatsDao.findByTenantIdQueueNameAndServiceId(..), calls: 1, failures: 0, exec time: 22
+2025-03-05 20:06:10,566 [TB-Scheduling-6] INFO  o.t.s.dao.aspect.SqlDaoCallsAspect - [56c871f0-f9f7-11ef-a087-d5dfd40a9d59]: method: JpaAbstractDao.save(..), calls: 1, failures: 0, exec time: 0
+2025-03-05 20:06:10,566 [TB-Scheduling-8] INFO  o.t.s.c.t.s.DefaultTransportService - Transport Stats: openConnections [0]
+2025-03-05 20:06:22,101 [sql-log-1-thread-1] INFO  o.t.s.dao.sql.TbSqlBlockingQueue - Queue-0 [TS] queueSize [0] totalAdded [9] totalSaved [9] totalFailed [0]
+2025-03-05 20:06:22,102 [sql-log-1-thread-1] INFO  o.t.s.dao.sql.TbSqlBlockingQueue - Queue-1 [TS] queueSize [0] totalAdded [2] totalSaved [2] totalFailed [0]
+2025-03-05 20:06:22,128 [sql-log-1-thread-1] INFO  o.t.s.dao.sql.TbSqlBlockingQueue - Queue-0 [TS Latest] queueSize [0] totalAdded [9] totalSaved [9] totalFailed [0]
+2025-03-05 20:06:22,129 [sql-log-1-thread-1] INFO  o.t.s.dao.sql.TbSqlBlockingQueue - Queue-1 [TS Latest] queueSize [0] totalAdded [2] totalSaved [2] totalFailed [0]
