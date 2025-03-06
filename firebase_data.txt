@@ -1,0 +1,18 @@
+{
+    "-OKgyUlXYUKykq64aqf1": {
+        "Cell line": 1,
+        "Culture Health": 79,
+        "Image Filename": "C:\\Users\\markg\\Feb2025Project\\images\\DJVkDSK6es.png",
+        "Perturbation": 2,
+        "Primary Key": "DJVkDSK6es",
+        "Timestamp": "03-06-2025,14:41:16"
+    },
+    "-OKgyVywdHewiwQ9NSjO": {
+        "Cell line": 1,
+        "Culture Health": 55,
+        "Image Filename": "C:\\Users\\markg\\Feb2025Project\\images\\qkJrvEBwZi.png",
+        "Perturbation": 3,
+        "Primary Key": "qkJrvEBwZi",
+        "Timestamp": "03-06-2025,14:41:21"
+    }
+}
