@@ -1,8 +1,5 @@
-##TODO export Device JSON from home PC for ThingsBoard
-##TODO make docker include root chain rule when container is created
-
-# random image generation attribution
-# https://stackoverflow.com/questions/15261851/100x100-image-with-random-pixel-colour
+# A script which simulates a cell culture imaging robot as a data source and uses the MQTT protocol to send the
+# generated data to ThingsBoard which sends it to a Google Firebase Realtime Database
 
 import string, numpy, random, time, os, json
 import paho.mqtt.client as mqtt
@@ -23,6 +20,8 @@ def generate_data(cell_line, perturbation):
     img_dir = wd + r'\images'
     os.makedirs(img_dir, exist_ok=True)  # Create the directory if it doesn't exist
 
+    # random image generation attribution
+    # https://stackoverflow.com/questions/15261851/100x100-image-with-random-pixel-colour
     imarray = numpy.random.rand(100,100,3) * 255
     im = Image.fromarray(imarray.astype('uint8')).convert('RGBA')
     img_out = img_dir + '\\' + random_string + '.png'
